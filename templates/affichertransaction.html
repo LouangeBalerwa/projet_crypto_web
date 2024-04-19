@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table des transactions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Liste des transactions</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Numéro de transaction</th>
+        <th>ID Client 1</th>
+        <th>ID Client 2</th>
+        <th>Date</th>
+        <th>Montant</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for transaction in transactions %}
+      <tr>
+        <td>{{ transaction.num_transaction }}</td>
+        <td>{{ transaction.id_client1 }}</td>
+        <td>{{ transaction.id_client2 }}</td>
+        <td>{{ transaction.date }}</td>
+        <td>{{ transaction.montant }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un client</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylClient.css') }}">
+</head>
+<body>
+    <h1>Ajouter un client</h1>
+
+    <form action="{{ url_for('ajouter_client') }}" method="POST"></form>
+    <form method="POST">
+        <div class="form-group">
+            <label for="numero_telephone">Numéro de téléphone:</label>
+            <input type="text" id="numero_telephone" name="numero_telephone" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="pays">Pays:</label>
+            <input type="text" id="pays" name="pays" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="ville">Ville:</label>
+            <input type="text" id="ville" name="ville" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+    </form>
+</body>
+</html>

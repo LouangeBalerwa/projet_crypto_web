@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 50%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
